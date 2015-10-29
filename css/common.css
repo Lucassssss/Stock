@@ -1,0 +1,49 @@
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+body{
+	background: #333;
+}
+.time_order_box{
+	border: 1px solid #999;
+	overflow: hidden;
+	width: 341px;
+}
+.time_order_box .sell_order1, .time_order_box .sell_order2,.time_order_box .buy_order1, .time_order_box .buy_order2{
+	width: 160px;
+	padding: 5px;
+}
+.time_order_box .sell_order1, .time_order_box .buy_order1{
+	border-right: 1px solid #999;
+}
+.time_order_box div.each span{
+	width: 33%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	height: 24px;
+	line-height: 24px;
+}
+.time_order_box div.each span.price{
+	color: #05FF25;
+}
+.time_order_box.buy{
+	border-top: none;
+}
+.stockNum{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	margin: 10px 0;
+}
+.stockNum input{
+	height: 33px;
+	line-height: 33px;
+	border: none;
+	font-size: 14px;
+	border-radius: 3px;
+	text-indent: 1em;
+}

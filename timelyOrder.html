@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="stockNum">
+			<span>股票代码:</span>
+			<input type="text" class="J_stockVal" value="002024"> 
+			<a href="javascript:;" class="btn btn-success J_getStockNum">GO</a>
+			<span class="typeErro" style="display:none;">输入有误</span>
+		</div>
+		<h3>盘口</h3>
+		<div class="time_order_main"></div>
+	</div>
+
+	<script id="sellTimeOrderTmp" type="text/x-handlebars-template">
+		<div class="time_order_box sell">
+			<div class="sell_order1 left">
+				<div class="each clear"> <span class="name">卖5</span> <span class="price">{{sell5.price}}</span> <span class="num">{{sell5.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖4</span> <span class="price">{{sell4.price}}</span> <span class="num">{{sell4.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖3</span> <span class="price">{{sell3.price}}</span> <span class="num">{{sell3.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖2</span> <span class="price">{{sell2.price}}</span> <span class="num">{{sell2.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖1</span> <span class="price">{{sell1.price}}</span> <span class="num">{{sell1.volume}}</span> </div>
+			</div>
+			<div class="sell_order2 left">
+				<div class="each clear"> <span class="name">卖10</span> <span class="price">{{sell10.price}}</span> <span class="num">{{sell10.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖9</span> <span class="price">{{sell9.price}}</span> <span class="num">{{sell9.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖8</span> <span class="price">{{sell8.price}}</span> <span class="num">{{sell8.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖7</span> <span class="price">{{sell7.price}}</span> <span class="num">{{sell7.volume}}</span> </div>
+				<div class="each clear"> <span class="name">卖6</span> <span class="price">{{sell6.price}}</span> <span class="num">{{sell6.volume}}</span> </div>
+			</div>
+		</div>
+		<div class="time_order_box buy">
+			<div class="buy_order1 left">
+				<div class="each clear"> <span class="name">买1</span> <span class="price">{{buy1.price}}</span> <span class="num">{{buy1.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买2</span> <span class="price">{{buy2.price}}</span> <span class="num">{{buy2.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买3</span> <span class="price">{{buy3.price}}</span> <span class="num">{{buy3.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买4</span> <span class="price">{{buy4.price}}</span> <span class="num">{{buy4.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买5</span> <span class="price">{{buy5.price}}</span> <span class="num">{{buy5.volume}}</span> </div>
+			</div>
+			<div class="buy_order2 left">
+				<div class="each clear"> <span class="name">买6</span> <span class="price">{{buy6.price}}</span> <span class="num">{{buy6.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买7</span> <span class="price">{{buy7.price}}</span> <span class="num">{{buy7.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买8</span> <span class="price">{{buy8.price}}</span> <span class="num">{{buy8.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买9</span> <span class="price">{{buy9.price}}</span> <span class="num">{{buy9.volume}}</span> </div>
+				<div class="each clear"> <span class="name">买10</span> <span class="price">{{buy10.price}}</span> <span class="num">{{buy10.volume}}</span> </div>
+			</div>
+		</div>
+	</script>
+
+	<script src="vendor/jquery-1.9.1.min.js"></script>
+	<script src="vendor/handlebars-v4.0.2.js"></script>
+	<script src="js/timeOrder.js"></script>
+</body>
+
+</html>
