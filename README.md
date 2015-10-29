@@ -1,6 +1,7 @@
 # Stock
 一个10档盘口的小工具
 不敢独享，分享出来。
+
 ![](http://img-storage.qiniudn.com/15-10-29/48114395.jpg )
 
 
