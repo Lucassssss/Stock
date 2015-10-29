@@ -6,6 +6,7 @@
 
 
 ![](https://ooo.0o0.ooo/2015/10/29/5631c3735d7ff.png )
+
 请使用chrome并在chrome快捷方式（可以专门专门建个用）属性 → 目标 “"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"” 后面添加  --disable-web-security （有空格）
 这么设置是为了能够跨域，我是暂时没有别的办法。
 
